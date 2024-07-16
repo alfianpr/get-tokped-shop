@@ -16,7 +16,7 @@ def standarized_columns(df: pd.DataFrame) -> pd.DataFrame:
     df.columns = df.columns.str.lower()
     for i, j in replace.items():
         df.columns = df.columns.str.replace(i, j, regex=False)
-    df["job_insertdate"] = jobtime()
+    df["scrape_time"] = jobtime()
     return df
 
 def save_df_to_csv(df, dir, file_name, header):
