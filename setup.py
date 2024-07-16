@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name='tokoscraper',
+    name='tokpedscraper',
     version='0.0.1',
     author="Alfian Pratama",
     author_email="alfianpratama@hotmail.com",
